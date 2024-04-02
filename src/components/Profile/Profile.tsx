@@ -1,4 +1,4 @@
-export function Profile() {
+export const Profile: React.FC = () => {
     return (
         <div>
             <p>
@@ -16,4 +16,4 @@ export function Profile() {
             </p>
         </div>
     );
-}
+};
