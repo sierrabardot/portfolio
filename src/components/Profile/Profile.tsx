@@ -1,6 +1,6 @@
 export const Profile: React.FC = () => {
     return (
-        <div>
+        <div className='vh-100'>
             <p>
                 Hi there! I'm Sierra, a Software Engineer with a diverse
                 professional background. If my journey to Software Engineering
