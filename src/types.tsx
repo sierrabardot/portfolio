@@ -1,5 +1,3 @@
 export type NavbarProps = {
-    setActivePage: React.Dispatch<React.SetStateAction<ActivePage>>;
+    setProfile: React.Dispatch<React.SetStateAction<boolean>>;
 };
-
-export type ActivePage = 'projects' | 'contact' | null;
