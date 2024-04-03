@@ -1,0 +1,23 @@
+.placeholder {
+    height: 50vh;
+    width: 300px;
+    color: blue;
+}
+
+.hero {
+    position: relative;
+}
+
+.name {
+    font-family: 'Caudex', serif;
+    font-size: 5rem;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    .name {
+        font-size: 3em;
+    }
+}

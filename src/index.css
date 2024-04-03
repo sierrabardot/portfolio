@@ -5,3 +5,8 @@ body {
 h1 {
     font-family: 'Caudex', serif;
 }
+
+#root {
+    margin: 0 auto;
+    text-align: center;
+}
