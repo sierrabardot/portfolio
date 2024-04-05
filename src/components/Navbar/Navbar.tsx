@@ -7,13 +7,13 @@ export const Navbar: React.FC<NavbarProps> = ({ setProfile }) => {
         <div
             id='main'
             className='my-4 navbar navbar-expand justify-content-center'>
-            <ul className='navbar-nav fw-semibold mb-3'>
+            <ul className='navbar-nav fw-light mb-3'>
                 <li className='nav-item'>
                     <NavLink
                         className={'nav-link'}
                         to='/'
                         onClick={() => handleClick(true)}>
-                        Profile
+                        profile
                     </NavLink>
                 </li>
                 <li className='nav-item'>
@@ -21,7 +21,7 @@ export const Navbar: React.FC<NavbarProps> = ({ setProfile }) => {
                         className={'nav-link'}
                         to='/projects'
                         onClick={() => handleClick(false)}>
-                        Projects
+                        projects
                     </NavLink>
                 </li>
                 <li className='nav-item'>
@@ -29,7 +29,7 @@ export const Navbar: React.FC<NavbarProps> = ({ setProfile }) => {
                         className={'nav-link'}
                         to='/contact'
                         onClick={() => handleClick(false)}>
-                        Contact
+                        contact
                     </NavLink>
                 </li>
             </ul>

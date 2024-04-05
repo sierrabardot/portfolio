@@ -1,13 +1,13 @@
 .placeholder {
     height: 500px;
     width: 300px;
-    color: blue;
+    color: gainsboro;
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
 }
 
 .hero-main {
-    min-height: 100vh;
+    min-height: 75vh;
 }
 
 .hero {

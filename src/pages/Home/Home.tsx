@@ -1,19 +1,13 @@
-import { Outlet } from 'react-router-dom';
 import { Hero } from '../../components/Hero/Hero';
-import { Navbar } from '../../components/Navbar/Navbar';
-import { useState } from 'react';
-import { Profile } from '../../components/Profile/Profile';
-import { ScrollToHashElement } from '../../components/ScrollToHashElement/ScrollToHashElement';
+import { MainContent } from '../../components/MainContent/MainContent';
+import { TopNavbar } from '../../components/TopNavbar/TopNavbar';
 
 export const Home: React.FC = () => {
-    const [profile, setProfile] = useState<boolean>(true);
     return (
         <div>
+            <TopNavbar />
             <Hero />
-            <ScrollToHashElement />
-            <Navbar setProfile={setProfile} />
-            {profile !== false && <Profile />}
-            <Outlet />
+            <MainContent />
         </div>
     );
 };
