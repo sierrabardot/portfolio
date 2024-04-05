@@ -1,16 +1,13 @@
 import { Link } from 'react-router-dom';
 import './TopNavbar.css';
+import brand from '../../assets/icons/brand.png';
 
 export const TopNavbar: React.FC = () => {
     return (
         <div className='navbar navbar-expand bg-light border-bottom border-black py-3'>
             <div className='container-fluid'>
                 <Link className='navbar-brand' to='/'>
-                    <img
-                        src='./brand.png'
-                        className=' mx-5 star'
-                        alt='Brand Icon'
-                    />
+                    <img src={brand} className=' mx-5 star' alt='Brand Icon' />
                 </Link>
             </div>
             <div className='right'>

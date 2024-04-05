@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Hero.css';
+import downArrow from '../../assets/icons/down-arrow.png';
 
 export const Hero: React.FC = () => {
     return (
@@ -14,7 +15,7 @@ export const Hero: React.FC = () => {
                 </h6>
                 <Link to='/#main'>
                     <img
-                        src='./down-arrow.png'
+                        src={downArrow}
                         alt='Down arrow'
                         className='arrow-icon'
                     />
