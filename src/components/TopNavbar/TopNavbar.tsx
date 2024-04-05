@@ -7,7 +7,7 @@ export const TopNavbar: React.FC = () => {
             <div className='container-fluid'>
                 <Link className='navbar-brand' to='/'>
                     <img
-                        src='/brand.png'
+                        src='./brand.png'
                         className=' mx-5 star'
                         alt='Brand Icon'
                     />

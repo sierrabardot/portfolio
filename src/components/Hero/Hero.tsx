@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
                 </h6>
                 <Link to='/#main'>
                     <img
-                        src='/down-arrow.png'
+                        src='./down-arrow.png'
                         alt='Down arrow'
                         className='arrow-icon'
                     />
