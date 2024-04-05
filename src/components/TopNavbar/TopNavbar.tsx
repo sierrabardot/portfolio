@@ -18,7 +18,7 @@ export const TopNavbar: React.FC = () => {
                     target='_blank'
                     to='mailto:sierrasutherlandbrown@gmail.com'>
                     <button className='btn btn-dark rounded-pill mx-5'>
-                        Contact
+                        contact
                     </button>
                 </Link>
             </div>
