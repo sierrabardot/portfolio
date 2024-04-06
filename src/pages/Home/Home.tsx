@@ -8,7 +8,7 @@ export const Home: React.FC = () => {
     return (
         <div>
             <div className='background-cover'>
-                <video className='background-video' autoPlay muted loop>
+                <video className='background-video w-100' autoPlay muted loop>
                     <source
                         src={background}
                         type='video/mp4'
@@ -18,7 +18,9 @@ export const Home: React.FC = () => {
                 <TopNavbar />
                 <Hero />
             </div>
-            <MainContent />
+            <div>
+                <MainContent />
+            </div>
         </div>
     );
 };
