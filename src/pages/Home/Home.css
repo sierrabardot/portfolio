@@ -1,6 +1,14 @@
 .background-cover {
-    background-image: url('/bg-2.png');
+    background-image: url('/bg-video-2.mp4');
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 80vh;
+    min-height: 100vh;
+}
+
+.background-video {
+    height: 100vh;
+    object-fit: cover;
+    opacity: 80%;
+    position: absolute;
+    z-index: -1;
 }

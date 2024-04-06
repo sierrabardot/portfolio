@@ -4,8 +4,12 @@ import { ContactSection } from './components/ContactSection/ContactSection';
 import { ProjectsSection } from './components/ProjectsSection/ProjectsSection';
 
 function App() {
+    const handleScroll = (e: any) => {
+        console.log('scrolled!', e.target.scrollTop);
+    };
+
     return (
-        <div>
+        <div onScroll={(e) => handleScroll(e)}>
             <Routes>
                 <Route path='/' element={<Home />}>
                     <Route path='projects' element={<ProjectsSection />} />
