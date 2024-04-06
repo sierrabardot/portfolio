@@ -1,0 +1,6 @@
+.background-cover {
+    background-image: url('/bg-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+}

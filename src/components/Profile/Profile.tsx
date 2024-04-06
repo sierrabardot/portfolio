@@ -1,19 +1,22 @@
+import { Bio } from '../Bio/Bio';
+import profilePhoto from '../../assets/images/profile-photo.jpg';
+
 export const Profile: React.FC = () => {
     return (
-        <div>
-            <p>
-                Hi there! I'm Sierra, a Software Engineer with a diverse
-                professional background. If my journey to Software Engineering
-                has taught me one thing, it's that I am capable of learning
-                anything I set my mind to.
-            </p>
-            <p>
-                Proficient in Front End and Backend Development, having utilised
-                technologies including Javascript, Python, Node.js, React,
-                Express, SQL/NoSQL databases, HTML, CSS, and Git/GitHub, I'm on
-                the lookout for opportunities to apply my creative
-                problem-solving skills to enhance the user experience.
-            </p>
+        <div className='container-fluid d-flex flex-column px-1 px-md-5'>
+            <h1 className='mb-4'>Profile</h1>
+            <div className='row'>
+                <div className='col-7'>
+                    <Bio />
+                </div>
+                <div className='col-5'>
+                    <img
+                        className='col-12 profile-photo'
+                        src={profilePhoto}
+                        alt='Sierra and her dog'
+                    />
+                </div>
+            </div>
         </div>
     );
 };
