@@ -6,7 +6,7 @@ export const Navbar: React.FC<NavbarProps> = ({ setProfile }) => {
     return (
         <div
             id='main'
-            className='my-4 navbar navbar-expand justify-content-center'>
+            className='mt-4 navbar navbar-expand justify-content-center'>
             <ul className='navbar-nav fw-light mb-3'>
                 <li className='nav-item'>
                     <NavLink

@@ -28,7 +28,7 @@ export const Hero: React.FC = () => {
                 <img
                     src={downArrow}
                     alt='Down arrow'
-                    className='my-5 arrow-icon'
+                    className='my-md-5 my-3 arrow-icon'
                 />
             </Link>
         </div>

@@ -20,11 +20,9 @@ export const TopNavbar: React.FC = () => {
 
     return (
         <div
-            className={
-                scrollPosition > 0
-                    ? 'navbar navbar-expand border-bottom border-black py-0 py-md-3 scrolled'
-                    : 'navbar navbar-expand border-bottom border-black py-0 py-md-3'
-            }>
+            className={`navbar navbar-expand border-bottom border-black py-0 py-md-3 ${
+                scrollPosition > 0 ? ' scrolled' : ''
+            }`}>
             <div className='container-fluid'>
                 <Link className='navbar-brand' to='/'>
                     <img src={brand} className='mx-2 star' alt='Brand Icon' />

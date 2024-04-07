@@ -3,15 +3,15 @@ import profilePhoto from '../../assets/images/profile-photo.jpg';
 
 export const Profile: React.FC = () => {
     return (
-        <div className='container-fluid d-flex flex-column px-1 px-md-5'>
+        <div className='container-fluid d-flex flex-column px-4 px-md-5'>
             <h1 className='mb-4'>Profile</h1>
             <div className='row'>
-                <div className='col-7'>
+                <div className='col-md-7'>
                     <Bio />
                 </div>
-                <div className='col-5'>
+                <div className='col-md-5 mb-3'>
                     <img
-                        className='col-12 profile-photo'
+                        className='w-100 profile-photo'
                         src={profilePhoto}
                         alt='Sierra and her dog'
                     />
