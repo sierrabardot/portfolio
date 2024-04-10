@@ -1,9 +1,11 @@
+import { toolsData } from './toolsData';
+
 type Project = {
     title: string;
     tagline: string;
     link: string;
     details: string;
-    tech: string[];
+    tools: string[];
     image1: string;
     image2: string;
     image3: string;
@@ -18,7 +20,7 @@ export const projectData: Project[] = [
         link: 'https://github.com/sierrabardot/freshco',
         details:
             'Freshco. is an Inventory and Recipe Management web application designed with small businesses in mind. Users can manage their inventory, create recipes, and track food productions.',
-        tech: [
+        tools: [
             'MongoDB',
             'Mongoose',
             'Express.js',
@@ -39,7 +41,7 @@ export const projectData: Project[] = [
         link: 'https://github.com/RentHubGA/renthub',
         details:
             'RentHub is a comprehensive renting application designed to simplify the process of renting and managing household appliances, sporting equipment, and anything you may have around the house.',
-        tech: [
+        tools: [
             'Python',
             'Django',
             'PostgreSQL',
@@ -60,7 +62,7 @@ export const projectData: Project[] = [
         tagline: 'Explore your Surroundings',
         link: 'https://github.com/sierrabardot/eden',
         details: `Eden is an application designed to help users discover local edible foraging spots in their area. By using the client's location, the app fetches data about nearby foraging locations and displays them on an interactive map. Users can explore these locations, view details about each spot, including the plants available, and mark their favorites for future reference.`,
-        tech: [
+        tools: [
             'React.js',
             'JavaScript',
             'Bootstrap',

@@ -1,13 +1,17 @@
 export const Bio: React.FC = () => {
     return (
         <div>
-            <p className=''>
-                I'm a Software Engineer with a diverse professional background.
-                Proficient in Front End and Backend Development, having utilised
-                technologies including Javascript, Python, Node.js, React,
-                Express, SQL/NoSQL databases, HTML, CSS, and Git/GitHub, I'm on
-                the lookout for opportunities to apply my creative
-                problem-solving skills to enhance the user experience.
+            <p className='fw-light'>
+                Hi there, I'm Sierra! A newly graduated Melbourne based Software
+                Engineer who is passionate about writing purposeful and clean
+                code. I'm on the lookout for a new opportunity to put my
+                creative problem solving skills to use.
+            </p>
+            <p className='fw-light'>
+                When I'm not behind a screen, you can find me exploring the
+                outdoors — whether it's hiking in the Dandenong Ranges with my
+                cocker spaniel, planning next season's kitchen garden, or
+                sneakily stealing some feijoas from my neighbour's tree.
             </p>
         </div>
     );

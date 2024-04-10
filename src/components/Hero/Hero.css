@@ -1,5 +1,5 @@
 .hero-image {
-    height: 600px;
+    height: 500px;
     width: 350px;
     object-fit: cover;
     color: gainsboro;
@@ -20,7 +20,7 @@
     font-family: 'Caudex', serif;
     font-size: 5rem;
     position: absolute;
-    top: 90px;
+    top: 70px;
     z-index: 1;
 }
 
@@ -35,6 +35,10 @@
 
 @media (max-width: 768px) {
     .name {
-        font-size: 3em;
+        font-size: 2rem;
+    }
+    .hero-image {
+        width: 250px;
+        height: 350px;
     }
 }
