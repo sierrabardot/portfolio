@@ -1,0 +1,22 @@
+.background-cover {
+    background-image: url('/bg-video-2.mp4');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+}
+
+.background-video {
+    height: 850px;
+    object-fit: cover;
+    opacity: 50%;
+    position: absolute;
+    overflow-anchor: hidden;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .background-cover,
+    .background-video {
+        height: 700px;
+    }
+}

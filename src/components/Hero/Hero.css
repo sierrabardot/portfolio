@@ -1,0 +1,43 @@
+.hero-image {
+    height: 500px;
+    width: 350px;
+    object-fit: cover;
+    color: gainsboro;
+    border-radius: 10px;
+}
+
+.hero-main {
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+}
+
+.name,
+.name-sml {
+    font-family: 'Caudex', serif;
+    font-size: 5rem;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+}
+
+.name-sml {
+    font-size: 3rem;
+    line-height: 90%;
+}
+
+.arrow-icon {
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 2rem;
+    }
+    .hero-image {
+        width: 250px;
+        height: 350px;
+    }
+}
