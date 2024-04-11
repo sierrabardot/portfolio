@@ -1,4 +1,5 @@
-import { Tool, toolsData } from './toolsData';
+import { toolsData } from './toolsData';
+import { Tool } from '../types';
 
 type Project = {
     title: string;
