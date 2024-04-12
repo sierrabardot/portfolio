@@ -1,0 +1,9 @@
+.backgroundCover {
+    height: 850px;
+}
+
+@media (max-width: 768px) {
+    .backgroundCover {
+        height: 700px;
+    }
+}

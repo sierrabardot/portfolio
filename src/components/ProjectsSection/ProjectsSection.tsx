@@ -1,7 +1,6 @@
 import { projectData } from '../../data/projectData';
 import { Link } from 'react-router-dom';
-import githubIcon from '../../assets/icons/github-mark.png';
-import './ProjectSection.css';
+import styles from './ProjectSection.module.css';
 
 export const ProjectsSection: React.FC = () => {
     return (
@@ -12,8 +11,8 @@ export const ProjectsSection: React.FC = () => {
                     <div className='col-md-4 d-flex align-items-center'>
                         <Link to={project.link} target='_blank'>
                             <img
-                                className='me-4 github-icon'
-                                src={githubIcon}
+                                className={`${styles.githubIcon} me-4`}
+                                src='/icons/github-mark.png'
                                 alt='Link to GitHub repo'
                             />
                         </Link>
@@ -31,7 +30,7 @@ export const ProjectsSection: React.FC = () => {
                                     key={t.tool}>
                                     <img
                                         src={t.icon}
-                                        className='icon mx-md-4 mb-1'
+                                        className={`${styles.icon} mx-md-4 mb-1`}
                                         alt={t.tool}
                                     />
                                     <p className='small'>{t.tool}</p>

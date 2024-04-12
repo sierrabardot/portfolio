@@ -1,5 +1,4 @@
 import { Bio } from '../Bio/Bio';
-import profilePhoto from '../../assets/images/profile-photo.png';
 import { Tools } from '../ToolComponent/ToolComponent';
 
 export const Profile: React.FC = () => {
@@ -13,13 +12,7 @@ export const Profile: React.FC = () => {
                     <Bio />
                 </div>
                 <div className='col-md-2'></div>
-                <div className='col-md-4'>
-                    <img
-                        className='w-100'
-                        src={profilePhoto}
-                        alt='Sierra and her dog'
-                    />
-                </div>
+                <div className='col-md-4'></div>
             </div>
             <Tools />
         </div>
