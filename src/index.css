@@ -1,5 +1,6 @@
 :root {
     --off-white: #f7f6f2;
+    --beige: #eeece5;
     --light-grey: #b0b0b0;
     --dark-grey: #2c2c2c;
     --yellow: #f7b832;
@@ -31,7 +32,16 @@ h3 {
     background-color: var(--dark-grey);
 }
 
+.bg-beige {
+    background-color: var(--beige);
+}
+
 .footer {
     position: sticky;
     top: 100vh;
+}
+
+.linebreak {
+    height: 1px;
+    background-color: var(--light-grey);
 }

@@ -1,0 +1,10 @@
+.icon {
+    height: 50px;
+    width: auto;
+}
+
+.iconBackground {
+    border-radius: 10px;
+    height: 70px;
+    width: 70px;
+}

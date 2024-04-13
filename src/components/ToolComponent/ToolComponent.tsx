@@ -1,6 +1,7 @@
 import { toolsData } from '../../data/toolsData';
 import { ToolsListProps } from '../../types';
 import { ToolsList } from '../ToolsList/ToolsList';
+import styles from './ToolComponent.module.css';
 
 export const Tools: React.FC = () => {
     const toolsListProps: ToolsListProps[] = [
@@ -24,7 +25,7 @@ export const Tools: React.FC = () => {
 
     return (
         <div className='d-flex flex-column mb-4'>
-            <h2 className='my-4'>Tools</h2>
+            <div className={`${styles.heading} my-4`}>Tools</div>
             {toolsListProps.map((item) => (
                 <ToolsList
                     key={item.title}
