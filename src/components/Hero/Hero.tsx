@@ -1,10 +1,29 @@
 import { Link } from 'react-router-dom';
 import styles from './Hero.module.css';
+import { useState, useEffect } from 'react';
 
 export const Hero: React.FC = () => {
+    const [scrollPosition, setScrollPosition] = useState<number>(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollPosition(window.scrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <div
-            className={`${styles.section} fc-light-grey d-flex flex-column justify-content-between small bg-dark-grey p-md-5 py-5 px-3`}>
+            className={` ${
+                scrollPosition > 50
+                    ? `${styles.sectionScrolled}`
+                    : `${styles.section}`
+            } fc-light-grey d-flex flex-column justify-content-between small p-md-5 py-5 px-3`}>
             {/* Background Blur Effect */}
             <img
                 src='images/bg-blur.png'
