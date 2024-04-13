@@ -1,19 +1,6 @@
 import { toolsData } from './toolsData';
 import { Tool } from '../types';
 
-type Project = {
-    title: string;
-    tagline: string;
-    link: string;
-    details: string;
-    tools: Tool[];
-    image1: string;
-    image2: string;
-    image3: string;
-    image4: string;
-    image5: string | null;
-};
-
 const findTools = (toolsArr: string[]) => {
     let tools: Tool[] = [];
     toolsArr.forEach((toolName) => {

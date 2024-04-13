@@ -11,13 +11,13 @@ export const Bio: React.FC = () => {
             <div className={`${styles.heading} mb-4`}>
                 Hi there, I'm Sierra!
             </div>
-            <p className='fw-light'>
+            <p>
                 A newly graduated Melbourne based Software Engineer who is
                 passionate about writing purposeful and clean code. I'm on the
                 lookout for a new opportunity to put my creative problem solving
                 skills to use.
             </p>
-            <p className='fw-light'>
+            <p>
                 When I'm not behind a screen, you can find me exploring the
                 outdoors — whether it's hiking in the Dandenong Ranges with my
                 cocker spaniel, planning next season's kitchen garden, or

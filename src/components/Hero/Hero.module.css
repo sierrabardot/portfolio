@@ -68,8 +68,8 @@
     .backgroundBlur2 {
         rotate: 290deg;
         height: auto;
-        width: 100%;
-        top: 300px;
-        left: 100px;
+        width: 90%;
+        top: 200px;
+        left: -200px;
     }
 }

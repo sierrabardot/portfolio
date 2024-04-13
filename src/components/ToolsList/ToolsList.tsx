@@ -9,7 +9,7 @@ export const ToolsList = ({ title, tools }: ToolsListProps) => {
             <div className='d-flex flex-wrap'>
                 {tools.map((t) => (
                     <div
-                        className={`${styles.iconBackground} d-flex justify-content-center me-3 my-3 flex-column bg-beige`}
+                        className={`${styles.iconBackground} d-flex justify-content-center me-md-5 me-4 my-3 flex-column bg-beige`}
                         key={t.tool}>
                         <img
                             src={t.icon}

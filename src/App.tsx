@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { Home } from './pages/Home/Home';
 import { ContactSection } from './components/ContactSection/ContactSection';
-import { ProjectsSection } from './components/ProjectsSection/ProjectsSection';
+import { ProjectsSection } from './components/ProjectsList/ProjectsList';
 
 function App() {
     return (
