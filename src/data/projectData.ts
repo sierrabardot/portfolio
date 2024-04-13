@@ -1,5 +1,5 @@
 import { toolsData } from './toolsData';
-import { Tool } from '../types';
+import { Tool, Project } from '../types';
 
 const findTools = (toolsArr: string[]) => {
     let tools: Tool[] = [];
