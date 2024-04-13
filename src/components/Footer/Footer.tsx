@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
                 </ul>
             </div>
             <div>
-                <p className='small text-white bg-black m-0 p-3'>
+                <p className='small text-white bg-dark-grey m-0 p-3'>
                     © 2024 by Sierra Sutherland-Brown
                 </p>
             </div>

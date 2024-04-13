@@ -1,14 +1,34 @@
+:root {
+    --off-white: #f7f6f2;
+    --light-grey: #b0b0b0;
+    --dark-grey: #2c2c2c;
+    --yellow: #f7b832;
+}
+
 body {
     font-family: system-ui, 'Helvetica Neue', sans-serif;
+    color: var(--dark-grey);
+    background-color: var(--off-white);
+    font-weight: 200;
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: 'Overused Grotesk', sans-serif;
+    font-weight: 200;
 }
 
-#root {
-    margin: 0 auto;
+.fc-off-white {
+    color: var(--off-white);
+}
+
+.fc-light-grey {
+    color: var(--light-grey);
+}
+
+.bg-dark-grey {
+    background-color: var(--dark-grey);
 }
 
 .footer {
