@@ -8,9 +8,7 @@ export const Home: React.FC = () => {
             <div className={`${styles.backgroundCover}`}>
                 <Hero />
             </div>
-            <div>
-                <MainContent />
-            </div>
+            <MainContent />
         </div>
     );
 };
