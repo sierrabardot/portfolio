@@ -1,3 +1,22 @@
+.projectsSection {
+    height: 700px;
+}
+
 .heading {
     font-size: 4rem;
+}
+
+.parallax {
+    max-width: 95%;
+    height: 62% !important;
+}
+
+.parallax::-webkit-scrollbar {
+    display: none;
+}
+
+.parallaxLayer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

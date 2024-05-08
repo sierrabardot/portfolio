@@ -34,7 +34,6 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project }) => {
                     ))}
                 </div>
             </div>
-            <div className='linebreak my-3'></div>
         </div>
     );
 };

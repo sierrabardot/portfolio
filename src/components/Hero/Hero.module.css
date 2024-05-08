@@ -28,7 +28,7 @@
     height: auto;
     width: 70%;
     top: -400px;
-    left: 450px;
+    right: 0;
 }
 
 .backgroundBlur2 {
@@ -68,7 +68,7 @@
         height: auto;
         width: 80%;
         top: -120px;
-        left: 100px;
+        right: 0;
     }
 
     .backgroundBlur2 {
