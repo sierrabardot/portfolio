@@ -1,25 +1,30 @@
-import { Link } from 'react-router-dom';
 import styles from './ProjectItem.module.css';
 import { ProjectListProps } from '../../types';
+import { ParallaxLayer } from '@react-spring/parallax';
 
-export const ProjectItem: React.FC<ProjectListProps> = ({ project }) => {
+export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
+    const stickyStart: number = index * 3;
+
     return (
-        <div key={project.title} className='row mb-5'>
-            <div className='col-md-4 d-flex flex-column'>
-                <div className='mb-2 d-flex align-items-center'>
-                    <Link to={project.link} target='_blank'>
-                        <img
-                            className={`${styles.linkIcon} me-3`}
-                            src='icons/link-icon.svg'
-                            alt='GitHub repo'
-                        />
-                    </Link>
-                    <div className='fs-2'>{project.title}</div>
-                </div>
-                <h6>{project.tagline}</h6>
-            </div>
-            <div className='col-md-8'>
+        <>
+            <ParallaxLayer
+                offset={stickyStart}
+                speed={1.5}
+                className={`${styles.parallax}`}>
+                {/* Placeholder for images */}
+            </ParallaxLayer>
+
+            <ParallaxLayer
+                offset={stickyStart + 1}
+                speed={1.5}
+                className={`${styles.parallax} p-md-2`}>
                 <p>{project.details}</p>
+            </ParallaxLayer>
+
+            <ParallaxLayer
+                offset={stickyStart + 2}
+                speed={1.5}
+                className={`${styles.parallax}`}>
                 <div className='d-flex flex-wrap'>
                     {project.tools.map((t) => (
                         <div
@@ -33,7 +38,7 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project }) => {
                         </div>
                     ))}
                 </div>
-            </div>
-        </div>
+            </ParallaxLayer>
+        </>
     );
 };

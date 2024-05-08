@@ -9,6 +9,11 @@
     width: 70px;
 }
 
-.linkIcon {
-    height: 25px;
+.parallax {
+    max-width: 75%;
+    margin-left: 25%;
+    position: absolute !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

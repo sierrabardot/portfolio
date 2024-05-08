@@ -36,4 +36,5 @@ export type NavbarProps = {
 
 export type ProjectListProps = {
     project: Project;
+    index: number;
 };

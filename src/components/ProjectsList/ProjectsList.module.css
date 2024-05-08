@@ -1,21 +1,27 @@
 .projectsSection {
-    height: 700px;
+    height: 800px;
 }
 
 .heading {
     font-size: 4rem;
 }
 
+.linkIcon {
+    height: 25px;
+}
+
 .parallax {
-    max-width: 95%;
-    height: 62% !important;
+    margin: 0 auto;
+    width: 98% !important;
+    height: 50% !important;
 }
 
 .parallax::-webkit-scrollbar {
     display: none;
 }
 
-.parallaxLayer {
+.sticky {
+    max-width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
