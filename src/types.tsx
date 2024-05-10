@@ -16,13 +16,16 @@ export type Project = {
     tagline: string;
     link: string;
     details: string;
+    keyFeatures: string[];
     tools: Tool[];
-    image1: string;
-    image2: string;
-    image3: string;
-    image4: string;
-    image5: string | null;
+    images: Image[];
+    colours: string[];
 };
+
+interface Image {
+    url: string;
+    alt: string;
+}
 
 // PROP TYPES
 export type ToolsListProps = {

@@ -26,7 +26,7 @@
 
 .backgroundBlur1 {
     height: auto;
-    width: 70%;
+    width: 50%;
     top: -400px;
     right: 0;
 }
@@ -34,8 +34,8 @@
 .backgroundBlur2 {
     rotate: 250deg;
     height: auto;
-    width: 50%;
-    top: 500px;
+    width: 60%;
+    top: 400px;
     right: 450px;
 }
 

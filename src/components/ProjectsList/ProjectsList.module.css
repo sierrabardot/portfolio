@@ -1,5 +1,5 @@
 .projectsSection {
-    height: 800px;
+    height: 1000px;
 }
 
 .heading {
@@ -12,8 +12,8 @@
 
 .parallax {
     margin: 0 auto;
-    width: 98% !important;
-    height: 50% !important;
+    width: 95% !important;
+    height: 900px !important;
 }
 
 .parallax::-webkit-scrollbar {
@@ -23,6 +23,4 @@
 .sticky {
     max-width: 25%;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }

@@ -7,24 +7,109 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
 
     return (
         <>
+            {/* Parallax Page 1: Project images */}
+
             <ParallaxLayer
-                offset={stickyStart}
-                speed={1.5}
+                offset={stickyStart + 0.45}
+                speed={2}
                 className={`${styles.parallax}`}>
-                {/* Placeholder for images */}
+                <div className='d-flex justify-content-end'>
+                    <img
+                        src={project.images[0].url}
+                        alt={project.images[0].alt}
+                        className='col-7'
+                    />
+                </div>
             </ParallaxLayer>
 
             <ParallaxLayer
-                offset={stickyStart + 1}
+                offset={stickyStart}
+                speed={0.5}
+                className={`${styles.parallax}`}>
+                <div className='d-flex'>
+                    <div className='row'>
+                        <img
+                            src={project.images[1].url}
+                            alt={project.images[1].alt}
+                            className={`${styles.imageParallax1} col-md-6`}
+                        />
+                        <img
+                            src={project.images[5].url}
+                            alt={project.images[5].alt}
+                            className={`${styles.imageParallax1} col-md-6`}
+                        />
+                    </div>
+                </div>
+            </ParallaxLayer>
+
+            <ParallaxLayer
+                offset={stickyStart + 0.35}
+                speed={-4}
+                className={`${styles.parallax}`}>
+                <div className='d-flex justify-content-end'>
+                    <img
+                        src={project.images[2].url}
+                        alt={project.images[2].alt}
+                        className='col-4'
+                    />
+                </div>
+            </ParallaxLayer>
+
+            <ParallaxLayer
+                offset={stickyStart + 0.7}
+                speed={4}
+                className={`${styles.parallax}`}>
+                <div className='d-flex justify-content-start'>
+                    <img
+                        src={project.images[4].url}
+                        alt={project.images[4].alt}
+                        className='col-4'
+                    />
+                </div>
+            </ParallaxLayer>
+
+            <ParallaxLayer
+                offset={stickyStart + 0.3}
+                speed={-5}
+                className={`${styles.parallax}`}>
+                <div className='d-flex justify-content-start'>
+                    <img
+                        src={project.images[3].url}
+                        alt={project.images[3].alt}
+                        className={`${styles.imageParallax3} col-6`}
+                    />
+                </div>
+            </ParallaxLayer>
+
+            {/* Parallax Page 2: Project details */}
+
+            <ParallaxLayer
+                offset={stickyStart + 1.0}
                 speed={1.5}
-                className={`${styles.parallax} p-md-2`}>
+                className={`${styles.parallax} p-md-3`}>
+                <h1>Summary</h1>
                 <p>{project.details}</p>
             </ParallaxLayer>
 
             <ParallaxLayer
-                offset={stickyStart + 2}
-                speed={1.5}
-                className={`${styles.parallax}`}>
+                offset={stickyStart + 1.25}
+                speed={3}
+                className={`${styles.parallax} p-md-3`}>
+                <h1>Key Features</h1>
+                <ul>
+                    {project.keyFeatures.map((f) => (
+                        <li>{f}</li>
+                    ))}
+                </ul>
+            </ParallaxLayer>
+
+            {/* Parallax Page 3: Tools */}
+
+            <ParallaxLayer
+                offset={stickyStart + 1.5}
+                speed={4.5}
+                className={`${styles.parallax} p-md-3`}>
+                <h1>Tools</h1>
                 <div className='d-flex flex-wrap'>
                     {project.tools.map((t) => (
                         <div
@@ -39,6 +124,23 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
                     ))}
                 </div>
             </ParallaxLayer>
+
+            {/* Colour Blocks */}
+            <div className='container d-flex flex-column'>
+                {project.colours.map((c, i) => (
+                    <ParallaxLayer
+                        offset={stickyStart + 1.5}
+                        speed={0.5 + i}
+                        style={{ right: `${i * 3}em` }}
+                        className={`${styles.parallax} d-flex justify-content-end`}>
+                        <div
+                            className={`${styles.circle}`}
+                            style={{
+                                backgroundColor: `${c}`,
+                            }}></div>
+                    </ParallaxLayer>
+                ))}
+            </div>
         </>
     );
 };
