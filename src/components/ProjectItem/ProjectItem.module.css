@@ -3,6 +3,10 @@
     width: auto;
 }
 
+.linkIcon {
+    height: 25px;
+}
+
 .iconBackground {
     border-radius: 10px;
     height: 70px;
@@ -21,7 +25,7 @@
 }
 
 .imageParallax3 {
-    opacity: 15%;
+    opacity: 50%;
     max-height: 200px;
     width: auto;
     max-width: 50%;
@@ -31,4 +35,11 @@
     width: 2em;
     height: 2em;
     border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .parallax {
+        max-width: 100%;
+        margin-left: 0;
+    }
 }

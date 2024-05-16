@@ -78,12 +78,12 @@ export const projectData: Project[] = [
         ]),
         images: [
             {
-                url: 'project-images/renthub/landing-page.png',
-                alt: 'Landing Page Screenshot',
+                url: 'project-images/renthub/product-page.png',
+                alt: 'Product Page Screenshot',
             },
             {
-                url: 'project-images/renthub/rental-mockup.png',
-                alt: 'Product Page Screenshot',
+                url: 'project-images/renthub/listings.png',
+                alt: 'Listings Page',
             },
             {
                 url: 'project-images/renthub/illustration.png',
@@ -94,8 +94,8 @@ export const projectData: Project[] = [
                 alt: 'Landing Page Screenshot',
             },
             {
-                url: 'project-images/renthub/product-page.png',
-                alt: 'Product Page Screenshot',
+                url: 'project-images/renthub/mockup.png',
+                alt: 'Landing Page Mockup',
             },
         ],
         colours: ['#2C2C2C', '#6D6FFE', '#9CD4EC', '#F7B832', '#F76D32'],

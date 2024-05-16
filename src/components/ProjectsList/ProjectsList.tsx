@@ -20,7 +20,7 @@ export const ProjectsSection: React.FC = () => {
                                 start: index * 2 + 0.4,
                                 end: index * 2 + 2,
                             }}
-                            className={`${styles.sticky}`}>
+                            className={`${styles.sticky} d-none d-md-block`}>
                             <div className='d-flex flex-column'>
                                 <div className='mb-2 d-flex align-items-center'>
                                     <Link to={project.link} target='_blank'>

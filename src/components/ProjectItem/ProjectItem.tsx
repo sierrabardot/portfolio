@@ -1,6 +1,7 @@
 import styles from './ProjectItem.module.css';
 import { ProjectListProps } from '../../types';
 import { ParallaxLayer } from '@react-spring/parallax';
+import { Link } from 'react-router-dom';
 
 export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
     const stickyStart: number = index * 2;
@@ -13,7 +14,7 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
                 offset={stickyStart + 0.45}
                 speed={2}
                 className={`${styles.parallax}`}>
-                <div className='d-flex justify-content-end'>
+                <div className='d-md-flex d-none justify-content-end'>
                     <img
                         src={project.images[0].url}
                         alt={project.images[0].alt}
@@ -50,7 +51,7 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
                     <img
                         src={project.images[3].url}
                         alt={project.images[3].alt}
-                        className='col-4'
+                        className='col-12 col-md-4'
                     />
                 </div>
             </ParallaxLayer>
@@ -63,7 +64,7 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
                     <img
                         src={project.images[2].url}
                         alt={project.images[2].alt}
-                        className={`${styles.imageParallax3} col-6`}
+                        className={`${styles.imageParallax3} col-md-6`}
                     />
                 </div>
             </ParallaxLayer>
@@ -72,15 +73,28 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
 
             <ParallaxLayer
                 offset={stickyStart + 1.0}
-                speed={1.5}
+                speed={1}
                 className={`${styles.parallax} p-md-3`}>
+                <div className='d-flex d-md-none flex-column mb-3'>
+                    <div className='mb-2 d-flex align-items-center'>
+                        <Link to={project.link} target='_blank'>
+                            <img
+                                className={`${styles.linkIcon} me-3`}
+                                src='icons/link-icon.svg'
+                                alt='GitHub repo'
+                            />
+                        </Link>
+                        <div className='fs-2'>{project.title}</div>
+                    </div>
+                    <h6>{project.tagline}</h6>
+                </div>
                 <h1>Summary</h1>
                 <p>{project.details}</p>
             </ParallaxLayer>
 
             <ParallaxLayer
-                offset={stickyStart + 1.25}
-                speed={3}
+                offset={stickyStart + 1.4}
+                speed={2}
                 className={`${styles.parallax} p-md-3`}>
                 <h1>Key Features</h1>
                 <ul>
@@ -93,8 +107,8 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
             {/* Parallax Page 3: Tools */}
 
             <ParallaxLayer
-                offset={stickyStart + 1.5}
-                speed={4.5}
+                offset={stickyStart + 1.8}
+                speed={3}
                 className={`${styles.parallax} p-md-3`}>
                 <h1>Tools</h1>
                 <div className='d-flex flex-wrap'>
@@ -116,7 +130,7 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
             <div className='container d-flex flex-column'>
                 {project.colours.map((c, i) => (
                     <ParallaxLayer
-                        offset={stickyStart + 1.5}
+                        offset={stickyStart + 1.6}
                         speed={0.5 + i}
                         style={{ right: `${i * 3}em` }}
                         className={`${styles.parallax} d-flex justify-content-end`}>
