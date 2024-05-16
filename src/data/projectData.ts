@@ -33,16 +33,12 @@ export const projectData: Project[] = [
         ]),
         images: [
             {
-                url: 'project-images/freshco/landing-page.png',
-                alt: 'Landing Page Screenshot',
+                url: 'project-images/freshco/view-recipe.png',
+                alt: 'View Recipe Page Screenshot',
             },
             {
                 url: 'project-images/freshco/dashboard.png',
                 alt: 'Dashboard Screenshot',
-            },
-            {
-                url: 'project-images/freshco/add-recipe.png',
-                alt: 'Add Recipe Screenshot',
             },
             {
                 url: 'project-images/freshco/logo.png',
@@ -53,8 +49,8 @@ export const projectData: Project[] = [
                 alt: 'Responsive Landing Page Screenshot',
             },
             {
-                url: 'project-images/freshco/recipe-laptop-mockup.png',
-                alt: 'Recipe Page Mockup',
+                url: 'project-images/freshco/mockup.png',
+                alt: 'Landing Page Mockup',
             },
         ],
         colours: ['#182D32', '#617C6F', '#E87E5E', '#D2F3FC', '#FDFAF3'],
@@ -64,8 +60,12 @@ export const projectData: Project[] = [
         tagline: 'Consume Less, Experience More',
         link: 'https://github.com/RentHubGA/renthub',
         details:
-            'RentHub is a comprehensive renting application designed to simplify the process of renting and managing household appliances, sporting equipment, and anything you may have around the house.',
-        keyFeatures: [''],
+            'Renthub is a versatile renting web application designed to streamline the process of renting and managing household appliances, sporting equipment, and various household items. With a user-friendly interface and comprehensive features, Renthub empowers users to easily rent and manage their belongings, facilitating a hassle-free experience. This was a team project that was designed, developed, and deployed within 10 days of receiving the brief.',
+        keyFeatures: [
+            `Templates were created using Django's built in templating system whilst responsiveness and usability was enhanced with Bootstrap, Crispy Forms, and general styling with HTML/CSS. By incorpotating different solutions, we ensured ease of navigation and an effective UI.`,
+            `PostgreSQL allowed us to efficiently store and retrieve data, maintaining the integrity of the product listings.`,
+            `jQuery and AJAX were used to create a dynamic calendar booking system, which enables users to see blocked dates and select suitable rental dates.`,
+        ],
         tools: findTools([
             'Python',
             'Django',
@@ -77,14 +77,28 @@ export const projectData: Project[] = [
             'CSS',
         ]),
         images: [
-            { url: '', alt: '' },
-            { url: '', alt: '' },
-            { url: '', alt: '' },
-            { url: '', alt: '' },
-            { url: '', alt: '' },
-            { url: '', alt: '' },
+            {
+                url: 'project-images/renthub/landing-page.png',
+                alt: 'Landing Page Screenshot',
+            },
+            {
+                url: 'project-images/renthub/rental-mockup.png',
+                alt: 'Product Page Screenshot',
+            },
+            {
+                url: 'project-images/renthub/illustration.png',
+                alt: 'RentHub Logo',
+            },
+            {
+                url: 'project-images/renthub/landing-page-responsive.png',
+                alt: 'Landing Page Screenshot',
+            },
+            {
+                url: 'project-images/renthub/product-page.png',
+                alt: 'Product Page Screenshot',
+            },
         ],
-        colours: ['', ''],
+        colours: ['#2C2C2C', '#6D6FFE', '#9CD4EC', '#F7B832', '#F76D32'],
     },
     {
         title: 'Eden',
@@ -103,7 +117,6 @@ export const projectData: Project[] = [
             'CSS',
         ]),
         images: [
-            { url: '', alt: '' },
             { url: '', alt: '' },
             { url: '', alt: '' },
             { url: '', alt: '' },

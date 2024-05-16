@@ -12,13 +12,13 @@ export const ProjectsSection: React.FC = () => {
 
             <Parallax
                 className={`${styles.parallax}`}
-                pages={projectData.length * 3}>
+                pages={projectData.length * 2}>
                 {projectData.map((project, index) => (
                     <>
                         <ParallaxLayer
                             sticky={{
-                                start: index * 3 + 0.2,
-                                end: index * 3 + 2,
+                                start: index * 2 + 0.4,
+                                end: index * 2 + 2,
                             }}
                             className={`${styles.sticky}`}>
                             <div className='d-flex flex-column'>

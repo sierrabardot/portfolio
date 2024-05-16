@@ -3,7 +3,7 @@ import { ProjectListProps } from '../../types';
 import { ParallaxLayer } from '@react-spring/parallax';
 
 export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
-    const stickyStart: number = index * 3;
+    const stickyStart: number = index * 2;
 
     return (
         <>
@@ -34,24 +34,11 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
                             className={`${styles.imageParallax1} col-md-6`}
                         />
                         <img
-                            src={project.images[5].url}
-                            alt={project.images[5].alt}
+                            src={project.images[4].url}
+                            alt={project.images[4].alt}
                             className={`${styles.imageParallax1} col-md-6`}
                         />
                     </div>
-                </div>
-            </ParallaxLayer>
-
-            <ParallaxLayer
-                offset={stickyStart + 0.35}
-                speed={-4}
-                className={`${styles.parallax}`}>
-                <div className='d-flex justify-content-end'>
-                    <img
-                        src={project.images[2].url}
-                        alt={project.images[2].alt}
-                        className='col-4'
-                    />
                 </div>
             </ParallaxLayer>
 
@@ -61,8 +48,8 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
                 className={`${styles.parallax}`}>
                 <div className='d-flex justify-content-start'>
                     <img
-                        src={project.images[4].url}
-                        alt={project.images[4].alt}
+                        src={project.images[3].url}
+                        alt={project.images[3].alt}
                         className='col-4'
                     />
                 </div>
@@ -74,8 +61,8 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
                 className={`${styles.parallax}`}>
                 <div className='d-flex justify-content-start'>
                     <img
-                        src={project.images[3].url}
-                        alt={project.images[3].alt}
+                        src={project.images[2].url}
+                        alt={project.images[2].alt}
                         className={`${styles.imageParallax3} col-6`}
                     />
                 </div>

@@ -22,6 +22,9 @@
 
 .imageParallax3 {
     opacity: 15%;
+    max-height: 200px;
+    width: auto;
+    max-width: 50%;
 }
 
 .circle {
