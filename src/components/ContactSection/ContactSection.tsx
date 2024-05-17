@@ -23,7 +23,7 @@ export const ContactSection: React.FC = () => {
                 <div className='col-md-5 col-8 ps-md-5'>
                     <img
                         src='icons/woman-on-laptop.svg'
-                        className='w-100 p-4'
+                        className='w-100 p-md-4'
                         alt='Woman sitting at a desk with laptop open'
                     />
                 </div>

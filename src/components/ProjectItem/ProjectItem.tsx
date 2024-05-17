@@ -69,6 +69,23 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
                 </div>
             </ParallaxLayer>
 
+            {/* Colour Blocks */}
+            <div className='container d-flex flex-column'>
+                {project.colours.map((c, i) => (
+                    <ParallaxLayer
+                        offset={stickyStart + 1.6}
+                        speed={0.5 + i}
+                        style={{ right: `${i * 3}em` }}
+                        className={`${styles.parallax} d-flex justify-content-end pe-1 pe-md-2`}>
+                        <div
+                            className={`${styles.circle}`}
+                            style={{
+                                backgroundColor: `${c}`,
+                            }}></div>
+                    </ParallaxLayer>
+                ))}
+            </div>
+
             {/* Parallax Page 2: Project details */}
 
             <ParallaxLayer
@@ -88,20 +105,24 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
                     </div>
                     <h6>{project.tagline}</h6>
                 </div>
-                <h1>Summary</h1>
-                <p>{project.details}</p>
+                <div className='pe-4 pe-md-5'>
+                    <h1>Summary</h1>
+                    <p>{project.details}</p>
+                </div>
             </ParallaxLayer>
 
             <ParallaxLayer
                 offset={stickyStart + 1.4}
                 speed={2}
                 className={`${styles.parallax} p-md-3`}>
-                <h1>Key Features</h1>
-                <ul>
-                    {project.keyFeatures.map((f) => (
-                        <li>{f}</li>
-                    ))}
-                </ul>
+                <div className='pe-4 pe-md-5'>
+                    <h1>Key Features</h1>
+                    <ul>
+                        {project.keyFeatures.map((f) => (
+                            <li>{f}</li>
+                        ))}
+                    </ul>
+                </div>
             </ParallaxLayer>
 
             {/* Parallax Page 3: Tools */}
@@ -111,7 +132,7 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
                 speed={3}
                 className={`${styles.parallax} p-md-3`}>
                 <h1>Tools</h1>
-                <div className='d-flex flex-wrap'>
+                <div className='d-flex flex-wrap justify-content-center '>
                     {project.tools.map((t) => (
                         <div
                             className={`${styles.iconBackground} d-flex justify-content-center me-md-5 me-4 my-3 flex-column bg-beige`}
@@ -125,23 +146,6 @@ export const ProjectItem: React.FC<ProjectListProps> = ({ project, index }) => {
                     ))}
                 </div>
             </ParallaxLayer>
-
-            {/* Colour Blocks */}
-            <div className='container d-flex flex-column'>
-                {project.colours.map((c, i) => (
-                    <ParallaxLayer
-                        offset={stickyStart + 1.6}
-                        speed={0.5 + i}
-                        style={{ right: `${i * 3}em` }}
-                        className={`${styles.parallax} d-flex justify-content-end`}>
-                        <div
-                            className={`${styles.circle}`}
-                            style={{
-                                backgroundColor: `${c}`,
-                            }}></div>
-                    </ParallaxLayer>
-                ))}
-            </div>
         </>
     );
 };
