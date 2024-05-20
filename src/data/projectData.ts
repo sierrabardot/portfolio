@@ -30,6 +30,7 @@ export const projectData: Project[] = [
             'HTML5',
             'CSS',
             'Bootstrap',
+            'Figma',
         ]),
         images: [
             {
@@ -75,6 +76,7 @@ export const projectData: Project[] = [
             'Bootstrap',
             'HTML5',
             'CSS',
+            'Figma',
         ]),
         images: [
             {
@@ -87,7 +89,7 @@ export const projectData: Project[] = [
             },
             {
                 url: 'project-images/renthub/illustration.png',
-                alt: 'RentHub Logo',
+                alt: 'Illustration of a Woman Using RentHub',
             },
             {
                 url: 'project-images/renthub/landing-page-responsive.png',
@@ -104,25 +106,47 @@ export const projectData: Project[] = [
         title: 'Eden',
         tagline: 'Explore your Surroundings',
         link: 'https://github.com/sierrabardot/eden',
-        details: `Eden is an application designed to help users discover local edible foraging spots in their area. By using the client's location, the app fetches data about nearby foraging locations and displays them on an interactive map. Users can explore these locations, view details about each spot, including the plants available, and mark their favorites for future reference.`,
-        keyFeatures: [''],
+        details: `Eden is an innovative web application designed to enhance the experience of discovering local edible foraging spots. Inspired by the Falling Fruit API, Eden offers a modern, user-friendly, and interactive interface to provide users with valuable information about nearby foraging locations. This solo project involved extensive research, planning, and development, resulting in a functional MVP that allows users to explore nearby locations, view details about each spot, including the plants available, and mark their favourites for future reference.`,
+        keyFeatures: [
+            `The app’s layout and flow were planned using Figma, ensuring an intuitive and seamless user experience. I generated user stories which guided the design and development process to meet the specific needs of foragers.`,
+            `Utilised Supabase to manage the backend, taking advantage of PostgreSQL's efficient and reliable data storage. This setup ensures the integrity and easy retrieval of data.`,
+            `Eden was built with React, breaking down the UI into manageable components. This modular approach facilitates smooth navigation and dynamic content updates.`,
+            `Enhanced user interaction with the integration of Google Maps API for precise location visualisation.`,
+            `While the MVP is complete, the project remains a work in progress with plans for additional features to further enhance user engagement and interactivity.`,
+        ],
         tools: findTools([
             'React.js',
             'JavaScript',
             'Bootstrap',
             'Supabase',
             'PostgreSQL',
+            'Figma',
             'Google Maps API',
             'HTML5',
             'CSS',
         ]),
         images: [
-            { url: '', alt: '' },
-            { url: '', alt: '' },
-            { url: '', alt: '' },
-            { url: '', alt: '' },
-            { url: '', alt: '' },
+            {
+                url: 'project-images/eden/landing-page.png',
+                alt: 'Landing Page Screenshot',
+            },
+            {
+                url: 'project-images/eden/map-view.png',
+                alt: 'Map Page Screenshot',
+            },
+            {
+                url: 'project-images/eden/logo.png',
+                alt: 'Eden Logo',
+            },
+            {
+                url: 'project-images/eden/dashboard-mobile.png',
+                alt: 'Dashboard on Mobile',
+            },
+            {
+                url: 'project-images/eden/mockup.png',
+                alt: 'Dashboard Mockup on Laptop',
+            },
         ],
-        colours: ['', ''],
+        colours: ['#00380D', '#177445', '#079DD8', '#EC5B60', '#F8EEE2'],
     },
 ];
