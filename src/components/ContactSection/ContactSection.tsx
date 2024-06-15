@@ -2,7 +2,8 @@ import styles from './ContactSection.module.css';
 
 export const ContactSection: React.FC = () => {
     return (
-        <div className='container-fluid d-flex flex-column px-4 px-md-5 mb-4'>
+        <div
+            className={`${styles.minHeight} container-fluid d-flex flex-column px-4 px-md-5 mb-4`}>
             <div className='row mb-5 d-flex align-items-center justify-content-center'>
                 <div className='col-md-7 pe-md-5'>
                     <h1 className={`${styles.heading} my-4`}>Contact</h1>
@@ -20,13 +21,7 @@ export const ContactSection: React.FC = () => {
                         sierrasutherlandbrown@gmail.com
                     </p>
                 </div>
-                <div className='col-md-5 col-8 ps-md-5'>
-                    <img
-                        src='icons/woman-on-laptop.svg'
-                        className='w-100 p-md-4'
-                        alt='Woman sitting at a desk with laptop open'
-                    />
-                </div>
+                <div className='col-md-5 col-8 ps-md-5'></div>
             </div>
         </div>
     );
